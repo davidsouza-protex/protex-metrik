@@ -10,7 +10,7 @@ import java.time.ZonedDateTime
 data class SingleRunResponse(
     val id: Long = 0,
     val name: String = Strings.EMPTY,
-    val headBranch: String = Strings.EMPTY,
+    val headBranch: String? = Strings.EMPTY,
     val runNumber: Int = 0,
     val status: String = Strings.EMPTY,
     val conclusion: String? = null,
