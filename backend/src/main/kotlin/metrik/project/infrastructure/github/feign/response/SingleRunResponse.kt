@@ -31,7 +31,7 @@ data class SingleRunResponse(
             status = status,
             conclusion = conclusion,
             url = url,
-            branch = headBranch,
+            branch = headBranch ?: "",
             commitTimeStamp = headCommit.timestamp,
             createdTimestamp = createdAt,
             updatedTimestamp = updatedAt
